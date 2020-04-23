@@ -1,0 +1,11 @@
+composer.lock
+phpunit.xml
+vendor
+._*
+*.swp
+.~lock.*
+.buildpath
+.DS_Store
+.idea
+*.iml
+clover.xml

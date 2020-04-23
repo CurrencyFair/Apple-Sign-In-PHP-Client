@@ -1,0 +1,14 @@
+{
+  "iss": "https://appleid.apple.com",
+  "aud": "aud",
+  "exp": 1586249240,
+  "iat": 1586248640,
+  "sub": "000609.xxx.2149",
+  "c_hash": "xxx",
+  "at_hash": "xxx",
+  "email": "xxx@xxx.com",
+  "is_private_email": "true",
+  "email_verified": "true",
+  "auth_time": 1586248640,
+  "nonce_supported": "true"
+}
