@@ -47,7 +47,7 @@ class Client
     public function verifyAndDecodeJwt($jwtToken)
     {
         return new JwtVerifyResponse(
-            JWT::decode($jwtToken, $this->getApplePublicKey(), ['RS256'])
+            JWT::decode($jwtToken, $this->getApplePublicKey())
         );
     }
 
