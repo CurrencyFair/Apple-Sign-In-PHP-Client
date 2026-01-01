@@ -9,3 +9,4 @@ vendor
 .idea
 *.iml
 clover.xml
+.phpunit.result.cache

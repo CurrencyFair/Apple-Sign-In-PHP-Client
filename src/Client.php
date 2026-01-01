@@ -7,6 +7,7 @@ use CurrencyFair\AppleId\Response\JwtVerifyResponse;
 use Exception;
 use Firebase\JWT\JWK;
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\RequestOptions;
@@ -47,7 +48,7 @@ class Client
     public function verifyAndDecodeJwt($jwtToken)
     {
         return new JwtVerifyResponse(
-            JWT::decode($jwtToken, $this->getApplePublicKey(), ['RS256'])
+            JWT::decode($jwtToken, $this->getApplePublicKey())
         );
     }
 
