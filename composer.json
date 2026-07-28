@@ -9,7 +9,7 @@
     "require": {
         "php": ">=8.1",
         "guzzlehttp/guzzle": "~7.15.2",
-        "firebase/php-jwt": "~6.11.1",
+        "firebase/php-jwt": "~7.1.0",
         "ext-json": "*",
         "ext-openssl": "*"
     },
