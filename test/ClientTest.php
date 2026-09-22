@@ -13,13 +13,10 @@ use Mockery as m;
 
 class ClientTest extends m\Adapter\Phpunit\MockeryTestCase
 {
-    /** @var string */
-    private $appleJwk;
+    private string|false $appleJwk;
+    private string|false $appleJwt;
 
-    /** @var string */
-    private $appleJwt;
-
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->appleJwk = file_get_contents(__DIR__ . '/data/appleJwk.json');
         $this->appleJwt = file_get_contents(__DIR__ . '/data/appleJwt');

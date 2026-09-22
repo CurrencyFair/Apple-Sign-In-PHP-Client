@@ -9,9 +9,9 @@ use stdClass;
 class JwtVerifyResponseTest extends MockeryTestCase
 {
     /** @var stdClass */
-    private $appleJwt;
+    private mixed $appleJwt;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->appleJwt = json_decode(file_get_contents(__DIR__ . '/../data/appleJwtDecoded.json'));
         parent::setUp();
